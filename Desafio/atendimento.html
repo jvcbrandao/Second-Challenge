@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PetVet - A casa do seu Pet</title>
+        <link rel="stylesheet" href="base.css">
+    </head>
+    <body>
+        <div class="wrapper" >
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html"><h1>HOME</h1></a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="sobre.html"><h1>SOBRE</h1></a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="atendimento.html"><h1>ATENDIMENTO</h1></a></li>
+                </ul>
+
+
+                <ul>
+                    <li><a href="contato.html"><h1>CONTATO</h1></a></li>
+                </ul>
+            </div>
+
+            <div class="main">
+                <div class="header">
+                    <img src="Header/header3.png" width="1000px"/>
+                </div>
+        
+                <div class="content">
+                        </br></br>
+                        <div class="fundo">
+                            <p>Na Clínica Veterinária PetVet, nossos serviços são prestados com amor e dedicação para proporcionar o melhor cuidado aos seus animais de estimação. Valorizamos a saúde e o bem-estar dos seus amigos peludos como se fossem os nossos próprios.</p>
+
+                            <p>Comprometemo-nos a oferecer atendimento de alta qualidade, utilizando os melhores equipamentos disponíveis. Na PetVet, investimos constantemente em tecnologia veterinária avançada para garantir diagnósticos precisos e tratamentos eficazes.</p>
+
+                            <p>Estamos aqui para fornecer um ambiente seguro e acolhedor para seus animais de estimação, porque acreditamos que eles merecem o melhor. Conte conosco para cuidar dos seus amigos com carinho e profissionalismo.</p>
+
+                            <p>Obrigado por escolher a PetVet para os cuidados veterinários do seu animal de estimação. Estamos ansiosos para servi-lo com excelência!</p>
+                        </div>
+                        <h1>Agende uma consulta</h1>
+                    <table summary="horários" class="table" width="800" align="center"  cellspacing="15" cellpadding="5">
+                        <thead align="center">
+                            <td>Serviços</td>
+                            <td>Segunda a Sexta</td>
+                            <td>Sábados</td>
+                            <td>Feriados</td>
+                            <td>Preços médios</td>
+                        </thead>
+                        <tbody align="center">
+                            <tr>
+                                <td>Clínica Geral</td>
+                                <td>08h - 19h</td>
+                                <td>08h - 14h</td>
+                                <td>08h - 14h</td>
+                                <td>R$ 60,00</td>
+
+                            </tr>
+                            <tr>
+                                <td>Anestesiologia</td>
+                                <td>08h - 19h</td>
+                                <td>08h - 14h</td>
+                                <td>08h - 14h</td>
+                                <td>R$ 50,00</td>
+
+                            </tr>
+                            <tr>
+                                <td>Dermatologia</td>
+                                <td>08h - 19h</td>
+                                <td>08h - 18h</td>
+                                <td>-</td>
+                                <td>R$ 110,00</td>
+
+                            </tr>
+                            <tr>
+                                <td>Cirurgia </td>
+                                <td>08h - 19h</td>
+                                <td>08h - 18h</td>
+                                <td>-</td>
+                                <td>R$ 3000,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </br></br></br>
+                </div>
+                <div class="data">
+                    <form method="post" autocomplete="on" name="datapet" action="#">
+                        <label>Nome do dono: </label><input type="text" id="owner" name="owner" required/> </br>
+                        <label>Nome do PET: </label><input type="text" id="animalname" name="animalname" required/> </br>
+                        <label>Idade do PET (em meses): </label><input min="0" type="number" id="age" name="age" required/> </br>
+                        <label>Seu fiel companheiro é: </label>
+                            <select name="animal" id="animal">
+                                <option value="select" selected>Selecione uma opção</option>
+                                <option value="cat">Gato</option>
+                                <option value="dog">Cachorro</option>
+                                <option value="parrot">Papagaio</option>
+                                <option value="pig">Porco</option>
+                                <option value="guineapig">Hamster</option>
+                                <option value="snake">Cobra</option>
+                                <option value="rabbit">Coelho</option>
+                                <option value="exotic">Animais exóticos</option>
+                                <option value="other">Outro</option>
+                            </select></br>
+                            Outro? Qual?<input type="text" id="specie" name="specie"/> </br>
+                            <label for="time">Horário:</label>
+                            <input type="time" id="time" name="time" required>
+                            <label>E-Mail: </label><input type="email" name="email" required/> </br>
+                            <label>Telefone de contato </label><input type="tel" name="tel" required/> </br>
+                            <label>Envie arquivos úteis aqui: </label><input type="file" name="file" multiple/> </br>
+                        
+                            <fieldset>
+                                <legend>Você concorda com os termos do contrato?</legend>
+                                <label><input type="radio" name="radio" value="sim" /> Sim</label>
+                                <label><input type="radio" name="radio" value="não" /> Não</label>
+                            </fieldset>
+                                <label>Click <a href="terms.html">aqui</a> para ler</label>
+                                <label>Informe aqui a descrição dos sintomas o mais detalhada possível: </label>
+                            <textarea rows="10"></textarea>
+                            <button>Enviar</button>
+                    </form>
+                </div>
+                </br></br>
+
+                <div class="footer">
+                    <img src="Footer/footer copy.png" width="1000px"/>
+                    <p align="center">© 2023 Clínica Veterinária PetVet - Todos os direitos reservados | Desenvolvido por: João Vitor Brandão</p>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
